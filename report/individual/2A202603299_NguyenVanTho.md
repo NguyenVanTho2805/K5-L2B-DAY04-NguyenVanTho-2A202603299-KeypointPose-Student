@@ -144,6 +144,8 @@ Các `[CẢNH BÁO]` còn giữ nguyên và lý do:
 
    ![Label person](images/1_label_person.png)
 
+   Ảnh chụp từ file định nghĩa label `src/lab/labels_d04_keypoint.json` (file `setup` dùng để tạo label cho project): label `person` kiểu skeleton, đủ 17 điểm có tên, 19 cạnh (phần svg đã rút gọn).
+
 2. Một người quay lưng đã gán, cờ đã đặt:
 
    ![Người quay lưng](images/2_nguoi_quay_lung.png)
@@ -225,4 +227,4 @@ Kết quả `src/check_submission.py` cho `HoVaTen_bonus_persons.zip`:
 
 - Tài liệu của lab (repo đề bài): `README.md`, `RULES.md`, `RUBRIC.md`, `CHECKPOINTS.md`, `SUBMISSION.md`, `docs/GUIDELINE.md`, `docs/CVAT_CHEATSHEET.md`, `docs/COCO_KEYPOINTS.md`, `docs/HUONG_DAN_BANG_HINH.md`.
 - Dữ liệu ảnh: COCO 2017 (Lin et al., 2014).
-- Công cụ AI: Claude (Claude Code). Dùng để đọc và tóm tắt tài liệu lab, giải thích quy ước nhãn và cách dùng CVAT, chạy `src/check_submission.py`, góp ý chỗ nên kiểm lại khi tôi gửi ảnh chụp màn hình nhãn, chép file xuất vào `src/exports/`, điền các phần thông tin kỹ thuật (mục 0, 1, 5) từ file xuất, và tạo ảnh `4_json_export.png` (cửa sổ văn bản hiển thị đoạn JSON lấy nguyên từ file `NguyenVanTho_persons.zip`, đã xuống dòng cho dễ đọc, rồi chụp màn hình). Không dùng để sinh điểm. Mục 4 và mục 7 do tôi viết; riêng mục 7 câu 3, các ý về trọng số trong loss tôi tham khảo từ gợi ý của Claude rồi diễn đạt lại. Ở mục 3, các cột ảnh, người, điểm và cờ được điền từ file xuất; hai cột "Phân vân giữa" và "Lý do chọn" do tôi tự viết.
+- Công cụ AI: Claude (Claude Code). Dùng để đọc và tóm tắt tài liệu lab, giải thích quy ước nhãn và cách dùng CVAT, chạy `src/check_submission.py`, góp ý chỗ nên kiểm lại khi tôi gửi ảnh chụp màn hình nhãn, chép file xuất vào `src/exports/`, điền các phần thông tin kỹ thuật (mục 0, 1, 5) từ file xuất, và tạo hai ảnh chụp màn hình: `4_json_export.png` (cửa sổ văn bản hiển thị đoạn JSON lấy nguyên từ file `NguyenVanTho_persons.zip`, đã xuống dòng cho dễ đọc) và `1_label_person.png` (cửa sổ văn bản hiển thị tên 17 điểm của label `person` lấy từ file `src/lab/labels_d04_keypoint.json`, phần svg đã rút gọn). Không dùng để sinh điểm. Mục 4 và mục 7 do tôi viết; riêng mục 7 câu 3, các ý về trọng số trong loss tôi tham khảo từ gợi ý của Claude rồi diễn đạt lại. Ở mục 3, các cột ảnh, người, điểm và cờ được điền từ file xuất; hai cột "Phân vân giữa" và "Lý do chọn" do tôi tự viết.
