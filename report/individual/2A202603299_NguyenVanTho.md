@@ -36,7 +36,7 @@ Rê chuột vào đúng điểm rồi bấm `Q` để bật `occluded` hoặc `O
 | `easy` | 5 | 5 | 0 | 0 | ~25 |
 | `occluded` | 3 | 6 | 0 | 0 | ~21 |
 | `back` | 2 | 3 | 0 | 0 | ~16 |
-| `small` | 1 | 4 | ~6 | 0 | ~8 |
+| `small` | 1 | 4 | ~4 | 0 | ~8 |
 | `crowd` | 1 | 3 | 0 | 0 | ~14 |
 | `faces` | 8 | 8 | — | 0 | ~24 |
 
@@ -107,7 +107,7 @@ Tự kiểm tay trong file JSON:
 
 Sau khi xuất, CVAT ghi `occluded` thành `v = 1` và `outside` thành `v = 0`. Tọa độ của điểm `outside` trong file là `0, 0` hay tọa độ cũ? Tọa độ cũ (ví dụ `right_elbow` của `000000030960.jpg` người #2 là `249.86, 255.7, 0`).
 
-Hai job đã chuyển sang completed trên CVAT? Không (chưa finish, sẽ finish trước khi nộp)
+Hai job đã chuyển sang completed trên CVAT? Có
 
 Dán phần **TÓM TẮT** in ra từ `src/check_submission.py`:
 
@@ -134,9 +134,9 @@ Các `[CẢNH BÁO]` còn giữ nguyên và lý do:
 - `000000308257.jpg` người #1, cặp cổ chân nằm ngược phía. Lý do: đã kiểm tra lại, trái/phải đúng; tôi xác định được tương đối vị trí các điểm này nên giữ nguyên.
 - `000000332273.jpg` người #1, cặp tai nằm ngược phía. Lý do: đã kiểm tra lại, trái/phải đúng; tôi xác định được tương đối vị trí các điểm này nên giữ nguyên.
 - `000000332273.jpg` người #3, cặp cổ chân nằm ngược phía. Lý do: đã kiểm tra lại, trái/phải đúng; tôi xác định được tương đối vị trí các điểm này nên giữ nguyên.
-- `000000572411.jpg` người #1, cao 29 px (dưới 60 px). Lý do: đây là lỗi `extra` (xem mục 4), skeleton này sẽ bị xóa.
+- `000000572411.jpg` người #1, cao 29 px (dưới 60 px). Lý do: đây là lỗi `extra` (xem mục 4), tôi chưa sửa.
 - `000000572411.jpg` người #1 và #4, cặp cổ tay nằm ngược phía. Lý do: đã kiểm tra lại, trái/phải đúng; tôi xác định được tương đối vị trí các điểm này nên giữ nguyên.
-- `000000572411.jpg` người #2, cao 30 px (dưới 60 px). Lý do: đây là lỗi `extra` (xem mục 4), skeleton này sẽ bị xóa.
+- `000000572411.jpg` người #2, cao 30 px (dưới 60 px). Lý do: đây là lỗi `extra` (xem mục 4), tôi chưa sửa.
 
 ## 6. Ảnh chụp màn hình
 
