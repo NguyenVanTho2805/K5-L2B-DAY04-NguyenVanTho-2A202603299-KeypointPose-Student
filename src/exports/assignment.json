@@ -1,0 +1,43 @@
+{
+ "mssv": "2A202603299",
+ "ten": "NguyenVanTho",
+ "pool_version": "d04-k5-v2",
+ "cvat_user": "thonguyen28.nitc@gmail.com",
+ "project": "d04-keypoint",
+ "persons": [
+  "000000177889.jpg",
+  "000000184224.jpg",
+  "000000196283.jpg",
+  "000000308257.jpg",
+  "000000463932.jpg",
+  "000000030960.jpg",
+  "000000179201.jpg",
+  "000000220045.jpg",
+  "000000210604.jpg",
+  "000000359340.jpg",
+  "000000572411.jpg",
+  "000000332273.jpg"
+ ],
+ "faces": [
+  "face_125051.jpg",
+  "face_261458.jpg",
+  "face_469647.jpg",
+  "face_137371.jpg",
+  "face_505385.jpg",
+  "face_196742.jpg",
+  "face_99874.jpg",
+  "face_490361.jpg"
+ ],
+ "tasks": {
+  "persons": {
+   "task_id": 12,
+   "job_id": 12,
+   "task_name": "persons-NguyenVanTho"
+  },
+  "faces": {
+   "task_id": 13,
+   "job_id": 13,
+   "task_name": "faces-NguyenVanTho"
+  }
+ }
+}
